@@ -30,7 +30,7 @@ document.getElementById('card1').addEventListener('click', function() {
         btnPurchase.style.backgroundColor = '#E527B2'
     }
 
-    if (mainPrice >= 100) {
+    if (mainPrice >= 200) {
         btnDiscount.removeAttribute('disabled');
         btnDiscount.style.backgroundColor = '#E527B2'
     }
@@ -42,12 +42,10 @@ document.getElementById('card1').addEventListener('click', function() {
         const couponInputValue = couponInput.value
         if (couponInputValue === 'SELL200') {
             const discountPrice = 0.2 * mainPrice
-            discount.innerText = discountPrice
-            const afterDiscount = mainPrice - discountPrice
-            mainTotal.innerText = afterDiscount.toFixed(2)
-        } else {
-            alert("Invalid Coupon")
-        }
+            discount.innerText = discountPrice.toFixed(2)
+            const afterDiscount = (mainPrice - discountPrice).toFixed(2)
+            mainTotal.innerText = afterDiscount
+        } 
     })
     
 });
@@ -86,7 +84,7 @@ document.getElementById('card2').addEventListener('click', function(){
         btnPurchase.style.backgroundColor = '#E527B2'
     }
 
-    if (mainPrice >= 100) {
+    if (mainPrice >= 200) {
         btnDiscount.removeAttribute('disabled');
         btnDiscount.style.backgroundColor = '#E527B2'
     }
@@ -98,12 +96,10 @@ document.getElementById('card2').addEventListener('click', function(){
         const couponInputValue = couponInput.value
         if (couponInputValue === 'SELL200') {
             const discountPrice = 0.2 * mainPrice
-            discount.innerText = discountPrice
-            const afterDiscount = mainPrice - discountPrice
-            mainTotal.innerText = afterDiscount.toFixed(2)
-        } else {
-            alert("Invalid Coupon")
-        }
+            discount.innerText = discountPrice.toFixed(2)
+            const afterDiscount = (mainPrice - discountPrice).toFixed(2)
+            mainTotal.innerText = afterDiscount
+        } 
     })
 })
 
@@ -139,7 +135,7 @@ document.getElementById('card3').addEventListener('click', function(){
         btnPurchase.style.backgroundColor = '#E527B2'
     }
 
-    if (mainPrice >= 100) {
+    if (mainPrice >= 200) {
         btnDiscount.removeAttribute('disabled');
         btnDiscount.style.backgroundColor = '#E527B2'
     }
@@ -151,11 +147,9 @@ document.getElementById('card3').addEventListener('click', function(){
         const couponInputValue = couponInput.value
         if (couponInputValue === 'SELL200') {
             const discountPrice = 0.2 * mainPrice
-            discount.innerText = discountPrice
-            const afterDiscount = mainPrice - discountPrice
-            mainTotal.innerText = afterDiscount.toFixed(2)
-        } else {
-            alert("Invalid Coupon")
+            discount.innerText = discountPrice.toFixed(2)
+            const afterDiscount = (mainPrice - discountPrice).toFixed(2)
+            mainTotal.innerText = afterDiscount
         }
     })
 })
@@ -191,7 +185,7 @@ document.getElementById('card4').addEventListener('click', function(){
         btnPurchase.style.backgroundColor = '#E527B2'
     }
 
-    if (mainPrice >= 100) {
+    if (mainPrice >= 200) {
         btnDiscount.removeAttribute('disabled');
         btnDiscount.style.backgroundColor = '#E527B2'
     }
@@ -203,12 +197,10 @@ document.getElementById('card4').addEventListener('click', function(){
         const couponInputValue = couponInput.value
         if (couponInputValue === 'SELL200') {
             const discountPrice = 0.2 * mainPrice
-            discount.innerText = discountPrice
-            const afterDiscount = mainPrice - discountPrice
-            mainTotal.innerText = afterDiscount.toFixed(2)
-        } else {
-            alert("Invalid Coupon")
-        }
+            discount.innerText = discountPrice.toFixed(2)
+            const afterDiscount = (mainPrice - discountPrice).toFixed(2)
+            mainTotal.innerText = afterDiscount
+        } 
     })
 })
 document.getElementById('card5').addEventListener('click', function(){
@@ -243,7 +235,7 @@ document.getElementById('card5').addEventListener('click', function(){
         btnPurchase.style.backgroundColor = '#E527B2'
     }
 
-    if (mainPrice >= 100) {
+    if (mainPrice >= 200) {
         btnDiscount.removeAttribute('disabled');
         btnDiscount.style.backgroundColor = '#E527B2'
     }
@@ -255,12 +247,10 @@ document.getElementById('card5').addEventListener('click', function(){
         const couponInputValue = couponInput.value
         if (couponInputValue === 'SELL200') {
             const discountPrice = 0.2 * mainPrice
-            discount.innerText = discountPrice
-            const afterDiscount = mainPrice - discountPrice
-            mainTotal.innerText = afterDiscount.toFixed(2)
-        } else {
-            alert("Invalid Coupon")
-        }
+            discount.innerText = discountPrice.toFixed(2)
+            const afterDiscount = (mainPrice - discountPrice).toFixed(2)
+            mainTotal.innerText = afterDiscount
+        } 
     })
 })
 document.getElementById('card6').addEventListener('click', function(){
@@ -295,7 +285,7 @@ document.getElementById('card6').addEventListener('click', function(){
         btnPurchase.style.backgroundColor = '#E527B2'
     }
 
-    if (mainPrice >= 100) {
+    if (mainPrice >= 200) {
         btnDiscount.removeAttribute('disabled');
         btnDiscount.style.backgroundColor = '#E527B2'
     }
@@ -307,11 +297,13 @@ document.getElementById('card6').addEventListener('click', function(){
         const couponInputValue = couponInput.value
         if (couponInputValue === 'SELL200') {
             const discountPrice = 0.2 * mainPrice
-            discount.innerText = discountPrice
-            const afterDiscount = mainPrice - discountPrice
-            mainTotal.innerText = afterDiscount.toFixed(2)
-        } else {
-            alert("Invalid Coupon")
-        }
+            discount.innerText = discountPrice.toFixed(2)
+            const afterDiscount = (mainPrice - discountPrice).toFixed(2)
+            mainTotal.innerText = afterDiscount
+        } 
     })
+})
+
+document.getElementById('btn-gohome').addEventListener('click', function(){
+    window.location.href = 'index.html'
 })
